@@ -156,13 +156,15 @@ button,
 select {
   text-transform: none; }
 
-button,
-html input[type="button"],
-input[type="reset"],
-input[type="submit"] {
-  -webkit-appearance: button;
-  cursor: pointer; }
-
+    button,
+    html input[type="button"],
+    input[type="reset"],
+    input[type="submit"] {
+      -webkit-appearance: button;
+      appearance: button;
+      cursor: pointer;
+    }
+  
 button[disabled],
 input[disabled] {
   cursor: default; }
@@ -174,6 +176,7 @@ input[type="radio"] {
 
 input[type="search"] {
   -webkit-appearance: textfield;
+  appearance: textfield;
   box-sizing: content-box; }
 
 input[type="search"]::-webkit-search-cancel-button,
@@ -262,7 +265,8 @@ form textarea {
   margin-left: auto;
   padding-left: 15px;
   padding-right: 15px;
-  *zoom: 1; }
+  zoom: 1; 
+}
   .container:after {
     content: " ";
     clear: both;
@@ -284,7 +288,8 @@ form textarea {
   margin-left: auto;
   padding-left: 15px;
   padding-right: 15px;
-  *zoom: 1; }
+  zoom: 1; 
+}
   .container-fluid:after {
     content: " ";
     clear: both;
@@ -295,7 +300,8 @@ form textarea {
 .row {
   margin-left: -15px;
   margin-right: -15px;
-  *zoom: 1; }
+  zoom: 1;
+ }
   .row:after {
     content: " ";
     clear: both;
@@ -1147,7 +1153,8 @@ form textarea {
   .main-navigation .menu {
     list-style: none;
     display: inline-block;
-    *zoom: 1; }
+    zoom: 1; 
+  }
     .main-navigation .menu:after {
       content: " ";
       clear: both;
@@ -1239,7 +1246,8 @@ form textarea {
     .forecast-container .forecast.today {
       width: 420px; }
       .forecast-container .forecast.today .forecast-header {
-        *zoom: 1; }
+        zoom: 1; 
+      }
         .forecast-container .forecast.today .forecast-header:after {
           content: " ";
           clear: both;

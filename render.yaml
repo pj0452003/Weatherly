@@ -1,0 +1,13 @@
+services:
+  - type: web
+    name: weatherly
+    env: python
+    buildCommand: "pip install -r requirements.txt"
+    startCommand: "waitress-serve --port=$PORT weatherly.wsgi:application"
+    envVars:
+      - key: DJANGO_SETTINGS_MODULE
+        value: weatherly.settings
+      - key: SECRET_KEY
+        generateValue: true
+      - key: DEBUG
+        value: False
